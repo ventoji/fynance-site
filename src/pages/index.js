@@ -3,16 +3,16 @@ import React from "react"
 import Post from '../components/Post'
 import {graphql} from 'gatsby'
 import PrimaryLayout from '../layouts/PrimaryLayout'
-// import SEO from '../components/SEO'
-//   <SEO />
+ import SEO from '../components/SEO'
+//   
 
 export default ({data}) => {
 
-   console.log(data);
+  // console.log(data);
 
   return (
     <div>
-  
+    <SEO />
     <PrimaryLayout>
 
         {data.allMarkdownRemark.nodes.map(
