@@ -1,0 +1,10 @@
+html {
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    padding-bottom: 60px;
+}
+
+.img-pages {
+    height: 600px !important;
+}
