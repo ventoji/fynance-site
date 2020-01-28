@@ -3,8 +3,8 @@ import React from "react"
 import Post from '../components/Post'
 import {graphql} from 'gatsby'
 import PrimaryLayout from '../layouts/PrimaryLayout'
-import SEO from '../components/SEO'
-
+// import SEO from '../components/SEO'
+//   <SEO />
 
 export default ({data}) => {
 
@@ -12,7 +12,7 @@ export default ({data}) => {
 
   return (
     <div>
-    <SEO />
+  
     <PrimaryLayout>
 
         {data.allMarkdownRemark.nodes.map(
