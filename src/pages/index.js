@@ -1,6 +1,7 @@
-import React from "react"
+import React from 'react'
 // import {Link} from "gatsby"
-import Post from '../components/Post'
+// import Post from '../components/Post'
+import Content from '../components/Content'
 import {graphql} from 'gatsby'
 import PrimaryLayout from '../layouts/PrimaryLayout'
  import SEO from '../components/SEO'
@@ -8,24 +9,23 @@ import PrimaryLayout from '../layouts/PrimaryLayout'
 
 export default ({data}) => {
 
-  // console.log(data);
+   //console.log(data);
 
   return (
-    <div>
+    <div >
     <SEO />
     <PrimaryLayout>
-
-        {data.allMarkdownRemark.nodes.map(
-          (node,i) => (
-            <Post
-              key={i} 
-              title={node.frontmatter.title} 
-              excerpt={node.excerpt}
-              image={node.frontmatter.image}
-              readMore={node.fields.slug}
-              />
-          )
-        )}
+    {data.allMarkdownRemark.nodes.map(
+      (node,i) => (
+        <Content
+          key={i} 
+          title={node.frontmatter.title} 
+          html={node.html}
+          image={node.frontmatter.image}
+          />
+      )
+    )}
+    
     </PrimaryLayout>
   </div>
   )

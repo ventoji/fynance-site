@@ -1,15 +1,18 @@
 import React from 'react'
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import {Link} from 'gatsby'
+
 // import headerStyles from './header.module.css'
 
 export default () => (
-    <Navbar bg="light" expand="lg">
+  <div>
+
+  <Navbar bg="light" expand="lg">
   <Navbar.Brand > <Link to="/"> Fynance</Link></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link as={Link} to="/about">
+      <Nav.Link as={Link} to="/about-us">
          About Us
       </Nav.Link>
       <NavDropdown title="Services" id="basic-nav-dropdown">
@@ -35,6 +38,8 @@ export default () => (
     </Nav>
   </Navbar.Collapse>
 </Navbar>
+  </div>
+
 )
 
 /* export default () => (

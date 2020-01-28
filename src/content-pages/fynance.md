@@ -1,8 +1,7 @@
 ---
-title: " Fynance"
-date: "2020-01-26"
+title: "Fynance"
+date: "2020-01-24"
 keywords: " career, business"
-image: "http://utopiastudio.com.ve/fynance/fynancesite/wp-content/uploads/2018/03/business_networking.png"
 ---
 
 Life presents plenty of financial challenges.  You want to retire someday or take on a new business, career or project.  Or you look at the skyrocketing cost of education and wonder how you can ever give your kids the opportunities they desire.

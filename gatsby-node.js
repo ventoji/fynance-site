@@ -8,7 +8,7 @@ exports.onCreateNode = ({node, getNode, actions}) => {
         const slug = createFilePath({
             node, 
             getNode, 
-            basePath: "posts"
+            basePath: "content-pages"
         });
         createNodeField({
             node,
@@ -35,7 +35,7 @@ exports.createPages = ({graphql, actions}) => {
             result.data.allMarkdownRemark.nodes.forEach((node) => {
                 createPage({
                     path: node.fields.slug,
-                    component: path.resolve('./src/layouts/BlogpostLayout.js'),
+                    component: path.resolve('./src/layouts/ContentpageLayout.js'),
                     context:{
                         slug: node.fields.slug
                     }

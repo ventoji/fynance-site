@@ -2,15 +2,15 @@
 title: " About Us"
 date: "2020-01-26"
 keywords: " gatsby, react"
-image: "http://utopiastudio.com.ve/fynance/fynancesite/wp-content/uploads/2018/03/business_networking.png"
+image: "images/about-us.png"
 ---
 
 
-# Financial Concierge Services
+## Financial Concierge Services
 
 __Our mission__ is to be your point person on any financial matter you may face – a __fiduciary__ , as someone who, in a very intimate way, understands your wants, needs and concerns, and will truly look for what is in your best interest.
 
 
-# Financial & Business Coaching
+## Financial & Business Coaching
 
 We assist and guide you in the development and implementation of your life and business plans.

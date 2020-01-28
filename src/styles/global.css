@@ -7,4 +7,20 @@ html {
 
 .img-pages {
     height: 600px !important;
+    padding: 20px;
+}
+
+h2{
+    color: #666;
+}
+
+.home-content{
+    padding-top: 100px;
+}
+
+.plx{
+   background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
