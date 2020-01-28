@@ -22,7 +22,7 @@ export default ({data}) => {
               title={node.frontmatter.title} 
               excerpt={node.excerpt}
               image={node.frontmatter.image}
-              readMore={node.field.slug}
+              readMore={node.fields.slug}
               />
           )
         )}
