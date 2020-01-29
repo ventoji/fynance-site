@@ -7,7 +7,7 @@ import PrimaryLayout from '../layouts/PrimaryLayout'
  import SEO from '../components/SEO'
  import ImageParallax from "../components/ImageParallax"
 // import MainContent from "../layouts/MainContent",     <MainContent />
- import ComponentName from "../layouts/ComponentName"
+ import Intro from "../pages/intro"
 
 
 export default ({data}) => {
@@ -18,7 +18,7 @@ export default ({data}) => {
     <div >
     <SEO />
     <PrimaryLayout>
-    <ComponentName />
+    <Intro />
 
     {data.allMarkdownRemark.nodes.map(
       (node,i) => (
