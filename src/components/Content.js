@@ -1,17 +1,13 @@
 import React from "react"
-import { Row, Col, Image } from "react-bootstrap"
-// import ImageParallax from "../components/ImageParallax"
-//    {props.image && <ImageParallax image={props.image}/> }
+import { Row, Col} from "react-bootstrap"
+//   
+//   {props.image && <Image className="img-pages" src={props.image} /> }
 const Content = props => {
 
 
   return (
-    <div className="home-content container">
+    <div className="home-content">
         <Row>
-         
-       
-          {props.image && <Image className="img-pages" src={props.image} /> }
-
           <Col sm={4}>
             <h1> {props.title}</h1>
           </Col>

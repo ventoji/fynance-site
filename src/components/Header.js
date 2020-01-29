@@ -1,14 +1,18 @@
 import React from 'react'
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import {Link} from 'gatsby'
+// import ImageTest from './ImageTest'
+import ImageParallax from './ImageParallax'
+import logo from "../../static/images/header.jpg" 
 
 // import headerStyles from './header.module.css'
+// <Navbar.Brand > <Link to="/"> Fynance</Link></Navbar.Brand>
 
 export default () => (
   <div>
-
+  <ImageParallax image={logo} text={'Fynance'}/>
   <Navbar bg="light" expand="lg">
-  <Navbar.Brand > <Link to="/"> Fynance</Link></Navbar.Brand>
+  
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">

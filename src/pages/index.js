@@ -5,6 +5,7 @@ import Content from '../components/Content'
 import {graphql} from 'gatsby'
 import PrimaryLayout from '../layouts/PrimaryLayout'
  import SEO from '../components/SEO'
+ import ImageParallax from "../components/ImageParallax"
 //   
 
 export default ({data}) => {
@@ -17,12 +18,14 @@ export default ({data}) => {
     <PrimaryLayout>
     {data.allMarkdownRemark.nodes.map(
       (node,i) => (
+        <div>
+        {node.frontmatter.image && <ImageParallax image={node.frontmatter.image}/> }
         <Content
           key={i} 
           title={node.frontmatter.title} 
           html={node.html}
-          image={node.frontmatter.image}
           />
+          </div>
       )
     )}
     

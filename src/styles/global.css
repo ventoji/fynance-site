@@ -15,6 +15,7 @@ h2{
 }
 
 .home-content{
+    padding: 20px;
     padding-top: 100px;
 }
 
@@ -23,4 +24,22 @@ h2{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.brand-text{
+    left: 180px;
+    top: 500px;
+    color: white;
+    position: relative;
+    font-size: 50px;
+    font-weight: 800;
+    opacity: 1;
+}
+
+.brand-text:hover{
+    opacity: 0.5;
+}
+
+a:hover{
+    text-decoration: none;
 }

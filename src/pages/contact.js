@@ -4,6 +4,7 @@ import ContactForm from "../components/ContactForm"
 
 const Contact = () => (
   <PrimaryLayout>
+
     <ContactForm />
   </PrimaryLayout>
 )
