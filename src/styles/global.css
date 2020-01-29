@@ -43,3 +43,9 @@ h2{
 a:hover{
     text-decoration: none;
 }
+
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

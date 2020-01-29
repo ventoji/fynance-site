@@ -11,8 +11,7 @@ import logo from "../../static/images/header.jpg"
 export default () => (
   <div>
   <ImageParallax image={logo} text={'Fynance'}/>
-  <Navbar bg="light" expand="lg">
-  
+  <Navbar bg="light" expand="lg" fixed="top">
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
