@@ -6,15 +6,21 @@ import { graphql } from "gatsby"
 import SEO from "../components/SEO"
 
 const ContentpageLayout = ({ data }) => {
-   const post = data.markdownRemark
+  const post = data.markdownRemark
   //  console.log(post)
   return (
     <div>
-      <SEO title={post.frontmatter.title} image={post.frontmatter.image} keywords={post.frontmatter.keywords}/>
+      <SEO
+        title={post.frontmatter.title}
+        image={post.frontmatter.image}
+        keywords={post.frontmatter.keywords}
+      />
       <Header />
-      <Container>
+      <Container style={{ marginTop: "40px" }}>
         <Row>
-          <Image className="img-pages" src={post.frontmatter.image} fluid />
+          {post.frontmatter.image && (
+            <Image className="img-pages" src={post.frontmatter.image} fluid />
+          )}
           <Col sm={4}>
             <h1> {post.frontmatter.title}</h1>
           </Col>

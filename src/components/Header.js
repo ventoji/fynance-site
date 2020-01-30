@@ -19,10 +19,10 @@ export default () => (
          About Us
       </Nav.Link>
       <NavDropdown title="Services" id="basic-nav-dropdown">
-        <NavDropdown.Item >Advertising Services</NavDropdown.Item>
-        <NavDropdown.Item >Career Oportunities</NavDropdown.Item>
-        <NavDropdown.Item >Business Information</NavDropdown.Item>
-        <NavDropdown.Item >Job Placements</NavDropdown.Item>
+        <NavDropdown.Item ><Link to="/advertising-services"> Advertising Services</Link></NavDropdown.Item>
+        <NavDropdown.Item ><Link to="/career-oportunities">Career Oportunities</Link></NavDropdown.Item>
+        <NavDropdown.Item ><Link to="/business-information">Business Information </Link></NavDropdown.Item>
+        <NavDropdown.Item ><Link to="/job-placement">Job Placements</Link></NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item >Separated link</NavDropdown.Item>
       </NavDropdown>

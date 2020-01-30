@@ -1,48 +1,52 @@
-const { createFilePath } = require("gatsby-source-filesystem");
-const path = require('path');
+const { createFilePath } = require("gatsby-source-filesystem")
+const path = require("path")
 
-exports.onCreateNode = ({node, getNode, actions}) => {
-    const { createNodeField } = actions;
-    //console.log(node.internal.type);
-    if(node.internal.type === "MarkdownRemark"){
-        const slug = createFilePath({
-            node, 
-            getNode, 
-            basePath: "content-pages"
-        });
-        createNodeField({
-            node,
-            name: "slug",
-            value: slug
-        })
-    }
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions
+  // console.log(node);
+  if (node.internal.type === "MarkdownRemark") {
+    const fileNode = getNode(node.parent)
+    // console.log(fileNode);
+    // console.log(`\n`, fileNode.relativeDirectory)
+
+    const slug = createFilePath({
+      node,
+      getNode,
+      basePath: fileNode.relativeDirectory,
+    })
+    createNodeField({
+      node,
+      name: "slug",
+      value: slug,
+    })
+  }
 }
 
-exports.createPages = ({graphql, actions}) => {
-    const {createPage} = actions;
-    return graphql(
-        `{
-            allMarkdownRemark{
-              nodes{ 
-                fields{
-                  slug
-                }
-              }
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
+  return graphql(
+    `
+      {
+        allMarkdownRemark {
+          nodes {
+            fields {
+              slug
             }
-            }`
-    ).then(
-        result => {
-            result.data.allMarkdownRemark.nodes.forEach((node) => {
-                createPage({
-                    path: node.fields.slug,
-                    component: path.resolve('./src/layouts/ContentpageLayout.js'),
-                    context:{
-                        slug: node.fields.slug
-                    }
-                })
-            })
+          }
         }
-    )
+      }
+    `
+  ).then(result => {
+    result.data.allMarkdownRemark.nodes.forEach(node => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve("./src/layouts/ContentpageLayout.js"),
+        context: {
+          slug: node.fields.slug,
+        },
+      })
+    })
+  })
 }
 
 /*
