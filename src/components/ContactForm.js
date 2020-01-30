@@ -37,7 +37,10 @@ const handleSubmit = e => {
           noValidate 
           validated={validated} 
           onSubmit={handleSubmit} 
-          method="POST" data-netlify="true"
+          name="contact"
+          method="POST" 
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
         >
           <Form.Group controlId="contactForm.Name">
             <Form.Label>Name</Form.Label>
