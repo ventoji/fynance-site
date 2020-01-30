@@ -8,6 +8,7 @@ import PrimaryLayout from '../layouts/PrimaryLayout'
  import ImageParallax from "../components/ImageParallax"
 // import MainContent from "../layouts/MainContent",     <MainContent />
  import Intro from "../pages/intro"
+ import ContactForm from "../components/ContactForm"
 
 
 export default ({data}) => {
@@ -19,6 +20,10 @@ export default ({data}) => {
     <SEO />
     <PrimaryLayout>
     <Intro />
+    <div style={{display: "none"}}>
+    <ContactForm />
+    </div>
+    
 
     {data.allMarkdownRemark.nodes.map(
       (node,i) => (

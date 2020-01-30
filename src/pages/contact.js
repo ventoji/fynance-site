@@ -5,7 +5,7 @@ import ContactForm from "../components/ContactForm"
 
 const Contact = () => (
   <PrimaryLayout>
-    <div style={{ marginTop: "80px" }}>
+    <div style={{ marginTop: "80px", padding: "40px" }}>
       <div className="row">
         <div className="col-sm">
           <h1> Contact</h1>

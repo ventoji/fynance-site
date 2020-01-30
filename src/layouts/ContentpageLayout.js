@@ -1,19 +1,20 @@
 import React from "react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import {Container, Row, Col, Image} from "react-bootstrap"
+import { Container, Row, Col, Image } from "react-bootstrap"
 import { graphql } from "gatsby"
-
+import SEO from "../components/SEO"
 
 const ContentpageLayout = ({ data }) => {
-  const post = data.markdownRemark
-  console.log(post)
+   const post = data.markdownRemark
+  //  console.log(post)
   return (
     <div>
+      <SEO title={post.frontmatter.title} image={post.frontmatter.image} keywords={post.frontmatter.keywords}/>
       <Header />
       <Container>
         <Row>
-        <Image className="img-pages" src={post.frontmatter.image} fluid />
+          <Image className="img-pages" src={post.frontmatter.image} fluid />
           <Col sm={4}>
             <h1> {post.frontmatter.title}</h1>
           </Col>
@@ -36,6 +37,7 @@ export const query = graphql`
       frontmatter {
         title
         image
+        keywords
       }
     }
   }
