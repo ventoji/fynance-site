@@ -12,8 +12,10 @@ import {Link} from 'gatsby'
 // <Navbar.Brand > <Link to="/"> Fynance</Link></Navbar.Brand>
 
 export default ({height}) => (
-  <header>
+  <div>
   <ImageParallax image={logo} text={'Fynance'} height={height}/>
+  <header>
+ 
   <Navbar bg="light" expand="lg" fixed="top">
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
@@ -26,7 +28,6 @@ export default ({height}) => (
         <NavDropdown.Item ><Link to="/career-oportunities">Career Oportunities</Link></NavDropdown.Item>
         <NavDropdown.Item ><Link to="/business-information">Business Information </Link></NavDropdown.Item>
         <NavDropdown.Item ><Link to="/job-placement">Job Placements</Link></NavDropdown.Item>
-        <NavDropdown.Divider />
         <NavDropdown.Item ><Link to="/charitable-services">Charitable services</Link></NavDropdown.Item>
         <NavDropdown.Item ><Link to="/personnel-recruitment">Job Placement</Link></NavDropdown.Item>
         <NavDropdown.Item ><Link to="/ecommerce-serices">E-commerce services</Link></NavDropdown.Item>
@@ -50,6 +51,7 @@ export default ({height}) => (
   </Navbar.Collapse>
 </Navbar>
   </header>
+  </div>
 
 )
 

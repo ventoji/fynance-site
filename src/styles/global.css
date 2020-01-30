@@ -30,11 +30,28 @@ body, button, input, select, textarea {
 h1{
     font-size: 1.875rem;
 }
-
+a{
+    color:black !important;
+}
 h2{
     color: #666;
     font-size: 1.625rem;
     font-weight: 300;
+}
+.bg-light {
+    background-color: #fff !important;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 2.0rem;
+}
+
+.dropdown-item a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    text-decoration: none;
+    background-color: #9E9E9E;
 }
 
 .entry-title{
