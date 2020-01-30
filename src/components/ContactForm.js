@@ -36,8 +36,7 @@ const handleSubmit = e => {
         <Form 
           noValidate 
           validated={validated} 
-          onSubmit={handleSubmit} 
-          name="contact"
+          onSubmit={handleSubmit}
           method="POST" 
           data-netlify="true"
           data-netlify-honeypot="bot-field"
