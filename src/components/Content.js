@@ -9,10 +9,10 @@ const Content = props => {
     <div className="home-content">
         <Row>
           <Col sm={4}>
-            <h1> {props.title}</h1>
+            <h1 className="entry-title"> {props.title}</h1>
           </Col>
           <Col sm={8}>
-            <div dangerouslySetInnerHTML={{ __html: props.html }} />
+            <div dangerouslySetInnerHTML={{ __html: props.html }}  />
           </Col>
         </Row>
     </div>

@@ -5,17 +5,48 @@ html {
     padding-bottom: 60px;
 }
 
+body, button, input, select, textarea {
+    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 .img-pages {
-    height: 600px !important;
-    padding: 20px;
+    height: 750px !important;
+     padding: 10px;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+.single-featured-image-header {
+    background-color: #fafafa;
+    border-bottom: 1px solid#eee;
+}
+
+.single-featured-image-header .img-pages {
+    display: block;
+    margin: auto;
+}
+h1{
+    font-size: 1.875rem;
 }
 
 h2{
     color: #666;
+    font-size: 1.625rem;
+    font-weight: 300;
 }
 
+.entry-title{
+    color:#222;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
 .home-content{
-    padding: 20px;
+    padding: 250px;
     padding-top: 100px;
 }
 
@@ -38,6 +69,30 @@ h2{
 
 .brand-text:hover{
     opacity: 0.5;
+}
+
+.wrap {
+    max-width: 1000px;
+    padding-left: 3em;
+    padding-right: 3em;
+    position: relative;
+}
+
+.wrap img {
+    opacity:1;
+}
+.site-branding a:hover, .site-branding a:focus {
+    opacity: 0.7;
+}
+.site-branding a {
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.wrap::after {
+    clear: both;
+    content: "";
+    display: block;
 }
 
 a:hover{

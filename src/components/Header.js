@@ -1,20 +1,23 @@
 import React from 'react'
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import {Link} from 'gatsby'
-// import ImageTest from './ImageTest'
-import ImageParallax from './ImageParallax'
-import logo from "../../static/images/header.jpg" 
+ // import ImageTest from './ImageTest'
+ //   <ImageTest />
+ import ImageParallax from './ImageParallax'
+// 
+ import logo from "../../static/images/header.jpg" 
+
 
 // import headerStyles from './header.module.css'
 // <Navbar.Brand > <Link to="/"> Fynance</Link></Navbar.Brand>
 
-export default () => (
-  <div>
-  <ImageParallax image={logo} text={'Fynance'}/>
+export default ({height}) => (
+  <header>
+  <ImageParallax image={logo} text={'Fynance'} height={height}/>
   <Navbar bg="light" expand="lg" fixed="top">
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
+    <Nav className="justify-content-center">
       <Nav.Link as={Link} to="/about-us">
          About Us
       </Nav.Link>
@@ -24,8 +27,13 @@ export default () => (
         <NavDropdown.Item ><Link to="/business-information">Business Information </Link></NavDropdown.Item>
         <NavDropdown.Item ><Link to="/job-placement">Job Placements</Link></NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item >Separated link</NavDropdown.Item>
-      </NavDropdown>
+        <NavDropdown.Item ><Link to="/charitable-services">Charitable services</Link></NavDropdown.Item>
+        <NavDropdown.Item ><Link to="/personnel-recruitment">Job Placement</Link></NavDropdown.Item>
+        <NavDropdown.Item ><Link to="/ecommerce-serices">E-commerce services</Link></NavDropdown.Item>
+        <NavDropdown.Item ><Link to="/profesional-networking">Profesional networking oportunities</Link></NavDropdown.Item>
+        <NavDropdown.Item ><Link to="/crowdfunding-and-investments">Crowdfunding and investments</Link></NavDropdown.Item>
+     
+        </NavDropdown>
       <Nav.Link as={Link} to="/financial-planning">
         Financial Planning
       </Nav.Link>
@@ -41,7 +49,7 @@ export default () => (
     </Nav>
   </Navbar.Collapse>
 </Navbar>
-  </div>
+  </header>
 
 )
 

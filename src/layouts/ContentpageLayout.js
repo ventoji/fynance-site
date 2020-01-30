@@ -15,14 +15,17 @@ const ContentpageLayout = ({ data }) => {
         image={post.frontmatter.image}
         keywords={post.frontmatter.keywords}
       />
-      <Header />
-      <Container style={{ marginTop: "40px" }}>
-        <Row>
-          {post.frontmatter.image && (
-            <Image className="img-pages" src={post.frontmatter.image} fluid />
-          )}
+      <Header height='30vh'/>
+      <div className="single-featured-image-header">
+      {post.frontmatter.image && (
+        <Image className="img-pages" src={post.frontmatter.image} fluid />
+      )}
+      </div>
+      <Container>
+ 
+          <Row style={{ marginTop: "100px" }}>
           <Col sm={4}>
-            <h1> {post.frontmatter.title}</h1>
+            <h1 className="entry-title"> {post.frontmatter.title}</h1>
           </Col>
           <Col sm={8}>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />

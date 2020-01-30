@@ -5,7 +5,7 @@ const Intro = () => (
   <div className="home-content">
   <Row>
     <Col sm={4}>
-      <h1> Fynance</h1>
+      <h1 className="entry-title"> Fynance</h1>
     </Col>
     <Col sm={8}>
     <div><p>Life presents plenty of financial challenges.  You want to retire someday or take on a new business, career or project.  Or you look at the skyrocketing cost of education and wonder how you can ever give your kids the opportunities they desire.</p>

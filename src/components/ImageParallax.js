@@ -2,6 +2,7 @@ import React from "react"
 // import { css, jsx } from '@emotion/core'
 import styled from '@emotion/styled'
 import {Link} from 'gatsby'
+import ImageTest from "./ImageTest"
 
 //  <Button> my componet </Button>
 /*  const Button = styled.button`
@@ -16,7 +17,7 @@ import {Link} from 'gatsby'
   }
 `*/
 
-const ImageParallax = ({image, text=''}) => {
+const ImageParallax = ({image, text='', height='80vh'}) => {
 
 
 const DivImage = styled.div`
@@ -25,15 +26,16 @@ const DivImage = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: ${height};
 `
 
   //console.log(image)
  // const urlImage = `${image}`
  // console.log(urlImage)
+ const top = height === '30vh' ? '130px' : '480px';
 
   return (
-    <DivImage> <Link to="/" > <span className="brand-text"> {text}  </span> </Link> </DivImage> 
+     <DivImage> <Link to="/" > {text && <ImageTest top={top} />}  </Link> </DivImage>
 )
 
 }
