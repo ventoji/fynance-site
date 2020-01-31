@@ -42,7 +42,7 @@ h2{
     background-color: #fff !important;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-left: 2.0rem;
+    padding-left: 2.0rem !important;
 }
 
 .dropdown-item a:hover {
@@ -54,6 +54,9 @@ h2{
     background-color: #9E9E9E;
 }
 
+.nav-custom {
+    background: white;
+}
 .entry-title{
     color:#222;
     font-size: 14px;
@@ -65,6 +68,33 @@ h2{
 .home-content{
     padding: 250px;
     padding-top: 100px;
+}
+
+@media only screen and (max-width: 750px) {
+    .home-content{
+        padding: 20px;
+        padding-top: 80px;
+    }
+
+    .img-pages {
+        height: 350px !important;
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .Footer-module--footer--2CvYZ {
+        width: 750px !important;
+    }
+
+    .css-1d3wf0c-DivImage{
+        width: 750px;
+    }
+    .wrap img {
+        height: 80px;
+    }
+    .css-mtrp1t-DivImage {
+        height: 60vh;
+    }
 }
 
 .plx{

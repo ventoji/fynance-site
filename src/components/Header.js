@@ -16,7 +16,7 @@ export default ({height}) => (
   <ImageParallax image={logo} text={'Fynance'} height={height}/>
   <header>
  
-  <Navbar bg="light" expand="lg" fixed="top">
+  <Navbar className="nav-custom" expand="lg" fixed="top">
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="justify-content-center">
