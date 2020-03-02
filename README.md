@@ -19,7 +19,7 @@ Fynance site built using Gatsby and using the hello-world boilerplate template. 
     gatsby develop
     ```
 
-## 🧐 What's inside?
+## What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
@@ -63,6 +63,6 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
-You can check the site deployed in netlify: [fynance site](https://fervent-morse-5687bd.netlify.com/) and compare with the original site implemented in Wordpress [fynance site in Wordpress](http://fynance.com/).
+You can check the site deployed in netlify: [Fynance site](https://fervent-morse-5687bd.netlify.com/) and compare with the original site implemented in Wordpress [Fynance site in Wordpress](http://fynance.com/).
 
 <!-- AUTO-GENERATED-CONTENT:END -->
