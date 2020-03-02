@@ -4,7 +4,7 @@
   Fynance site
 </h1>
 
-Fynance site built using Gatsby and using the hello-world boilerplate template. _to check out [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/) for more collections_
+Fynance site built using Gatsby and using the hello-world boilerplate template. _To check out [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/) for seeing more collections_
 
 
 ##  Quick start
